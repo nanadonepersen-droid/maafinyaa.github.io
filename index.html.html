@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maaf yaa araaa🫰🏼💜</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #e93cef, #fbe9d7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #444;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #maafin {
+      background-color: #7bed9f;
+      color: white;
+    }
+
+    #maafin:hover {
+      background-color: #2ed573;
+    }
+
+    #enggak {
+      background-color: #ff6b81;
+      color: white;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>araaa nadhif minta maaf yaa tadi cuma bercanda sumpill✌🏼️✌🏼️</h1>
+  <p>jadiii araa mau maafin nadhif nggaa?👉🏼👈🏼</p>
+
+  <div class="buttons">
+    <button id="di maafin" onclick="maafin()">iyaa nadhiff udaa dimaafin kok🫰🏼</button>
+    <button id="enggak" onmouseover="kabur()">y</button>
+  </div>
+
+  <script>
+    function maafin() {
+      alert("makasiiii araa sudah mau maaffin nadhiff🫰🏼💜");
+      document.body.innerHTML = "<h1>💖 Aku senang kamu udah maafin aku! 💖</h1>";
+    }
+
+    function kabur() {
+      const button = document.getElementById('enggak');
+      // Gerakkan tombol ke posisi acak
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
+      button.style.position = 'absolute';
+      button.style.left = x + 'px';
+      button.style.top = y + 'px';
+    }
+  </script>
+</body>
+</html>
